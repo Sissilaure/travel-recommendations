@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Travel Recommendations</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Welcome to Our Travel Recommendations</h1>
+    <p>Choose your dream destination below:</p>
+
+    <div class="recommendation">
+      <h2>Beach Recommendation</h2>
+      <button onclick="showBeach()">Show Beaches</button>
+      <div id="beach" class="gallery"></div>
+    </div>
+
+    <div class="recommendation">
+      <h2>Temple Recommendation</h2>
+      <button onclick="showTemples()">Show Temples</button>
+      <div id="temple" class="gallery"></div>
+    </div>
+
+    <div class="recommendation">
+      <h2>By Country</h2>
+      <select onchange="showCountry(this.value)">
+        <option value="">Select Country</option>
+        <option value="japan">Japan</option>
+        <option value="greece">Greece</option>
+      </select>
+      <div id="country" class="gallery"></div>
+    </div>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
